@@ -34,7 +34,18 @@ public class ActivityController {
      model.addAttribute("actives",activityService.fall());
         return "showAll";
     }
+    @GetMapping("/activity/type")
+    public String getActivityByType(@RequestParam String type,Model model)
+    {
+        model.addAttribute("actives",activityService.getActivityByType(type));
+        return "index";
 
+    }
+    @RequestMapping("/main")
+      public String requestMain()
+    {
+        return "main";
+    }
 
 
 }

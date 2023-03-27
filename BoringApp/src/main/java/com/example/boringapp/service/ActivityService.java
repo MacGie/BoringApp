@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ActivityService {
 
-
+    ActivityClient activityClient= new ActivityClient();
     ActivityRepository activityRepository;
     @Autowired
     public ActivityService(ActivityRepository activityRepository) {
@@ -20,8 +20,6 @@ public class ActivityService {
     }
     public Activity getActivity()
     {
-        ActivityClient activityClient= new ActivityClient();
-        activityClient.setBaseUrl("http://www.boredapi.com/api/activity");
 
         return activityClient.convertDto(activityClient.getActivity());
     }
@@ -31,9 +29,13 @@ public class ActivityService {
         return activityRepository.findAll();
     }
     public void saveActivity(Activity activity1){
-        System.out.println("jestem tutaj podwójnie");
     activityRepository.save(activity1);
 
+    }
+    public Activity getActivityByType(String type)
+    {
+
+       return activityClient.convertDto(activityClient.CallApiByType(type));
     }
 
 }

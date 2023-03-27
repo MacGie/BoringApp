@@ -1,0 +1,48 @@
+.col{
+padding: 20px;
+
+
+}
+a:hover{
+    color:white;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+.education
+{
+    background-image: url("ph/education.jpg");
+
+}
+.education:hover{
+border:1px solid black;
+
+}
+.bg-photo{
+
+    text-align: center;
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+h1{
+    !important;filter:blur(0px);
+    !important;-webkit-filter: blur(0px);
+}
+.row
+{
+    height: 300px;
+
+}
+.container{
+    background-color:lightblue;
+
+}
