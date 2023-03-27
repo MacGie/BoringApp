@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Activity</title>
+</head>
+<body>
+<div th:switch="${actives}">
+  <div th:case="*">
+    <h2>Activity</h2>
+    <table>
+      <thead>
+      <tr>
+        <th>Aktywność</th>
+        <th>typ</th>
+        <th>ilość uczestników</th>
+        <th>Delete</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="actives : ${actives}">
+        <td th:text="${actives.id}"></td>
+        <td th:text="${actives.activity}"></td>
+        <td th:text="${actives.type}"></td>
+        <td th:text="${actives.participants}"></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <p><a href="/index">Find new activity</a></p>
+</div>
+</body>
+</html>
