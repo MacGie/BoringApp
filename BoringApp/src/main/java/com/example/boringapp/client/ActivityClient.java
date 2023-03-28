@@ -13,7 +13,7 @@ import java.net.URLEncoder;
 public class ActivityClient {
     RestTemplate restClient=new RestTemplate();
 @Value("${external.server.url}")
-    String baseUrl;
+   String baseUrl;
 
     public RestTemplate getRestClient() {
         return restClient;
@@ -30,7 +30,7 @@ public class ActivityClient {
 
     public ActivityDto getActivity()
     {
-        var url=baseUrl;
+        var url="http://www.boredapi.com/api/activity";
         return restClient.getForObject(url, ActivityDto.class);
     }
     public ActivityDto CallApiByType(String type)

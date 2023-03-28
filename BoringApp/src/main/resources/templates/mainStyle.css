@@ -1,7 +1,7 @@
 .col{
-padding: 20px;
+    padding: 20px;
 
-
+border: 0.5em solid white;
 }
 a:hover{
     color:white;
@@ -12,9 +12,9 @@ a{
     color: white;
 
 }
-.education
+#education
 {
-    background-image: url("ph/education.jpg");
+    background-image: url("/ph/education.jpg");
 
 }
 .education:hover{
@@ -33,16 +33,14 @@ border:1px solid black;
     background-size: cover;
     position: relative;
 }
-h1{
-    !important;filter:blur(0px);
-    !important;-webkit-filter: blur(0px);
-}
+
 .row
 {
     height: 300px;
 
+
 }
 .container{
-    background-color:lightblue;
+    background-color: #a9cedc;
 
 }

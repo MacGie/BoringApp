@@ -12,9 +12,9 @@ a{
     color: white;
 
 }
-.education
+#education
 {
-    background-image: url("ph/education.jpg");
+    background-image: url("/ph/education.jpg");
 
 }
 .education:hover{
@@ -43,6 +43,6 @@ h1{
 
 }
 .container{
-    background-color:lightblue;
+    background-color: #a9cedc;
 
 }
